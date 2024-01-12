@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <title>league</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <h2 id="quest">Question </h2>
+        <ul>
+          <li>
+            <input type="checkbox" name="answer" id="a">
+            <label for="a" id="as-txt">Question</label>
+          </li>
 
+          <li>
+            <input type="checkbox" name="answer" id="b">
+            <label for="b" id="bs-txt">Question</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="answer" id="c">
+            <label for="c" id="cs-txt">Question</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="answer" id="d">
+            <label for="d" id="ds-txt">Question</label>
+          </li>
+        </ul>
+      </div>
+      <button class="submit">Submit</button>
+    </div>
     <script src="assets/script/script.js"></script>
-</body>
+    <script src="api.js"></script>
+  </body>
 </html>
