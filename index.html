@@ -3,38 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/style/style.css" />
     <title>league</title>
   </head>
   <body>
     <div class="container">
-      <div class="question">
-        <h2 id="quest">Question </h2>
-        <ul>
-          <li>
-            <input type="checkbox" name="answer" id="a">
-            <label for="a" id="as-txt">Question</label>
-          </li>
-
-          <li>
-            <input type="checkbox" name="answer" id="b">
-            <label for="b" id="bs-txt">Question</label>
-          </li>
-
-          <li>
-            <input type="checkbox" name="answer" id="c">
-            <label for="c" id="cs-txt">Question</label>
-          </li>
-
-          <li>
-            <input type="checkbox" name="answer" id="d">
-            <label for="d" id="ds-txt">Question</label>
-          </li>
-        </ul>
+      <div class="quiz-head">
+        <h1>Quiz Score </h1>
       </div>
-      <button class="submit">Submit</button>
+      <div class="quiz-score">
+        <span id="correct-score">0</span>/<span id="total-questions">5</span>
+      </div>
+      <div class = "quiz-body">
+        <h2 class = "quiz-question" id = "question"> <!-- question --></h2>
+        <ul class = "quiz-options">
+            <!-- <li>1. question</li>
+                 <li>2.  question</li>
+                 <li>3.  question</li>
+                <li>4.  question/li> -->
+        </ul>
+        <div id = "result">
+        </div>
+    </div>
+    <div class = "quiz-foot">
+        <button type = "button" id = "check-answer">Check Answer</button>
+        <button type = "button" id = "play-again">Play Again!</button>
     </div>
     <script src="assets/script/script.js"></script>
-    <script src="api.js"></script>
+    <script src="assets/script/api.js"></script>
+    <script src="assets/script/dom.js"></script>
   </body>
 </html>
